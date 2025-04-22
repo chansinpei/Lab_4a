@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Question 4</title>
+</head>
+<body>
+
+  <script>
+    // Define the car object
+    const car = {
+      brand: "Koenigsegg",
+      model: "Agera RS",
+      year: 2022,
+
+      // Method to return car details
+      carDetails: function() {
+        return `Car Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}`;
+      },
+
+      // Method to return a descriptive sentence
+      describeCar: function() {
+        return `This car is a ${this.year} ${this.brand} ${this.model}`;
+      }
+    };
+
+    // Invoke the methods and display the results
+    console.log(car.carDetails());
+    console.log(car.describeCar());
+  </script>
+
+</body>
+</html>
